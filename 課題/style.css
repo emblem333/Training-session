@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+  /* color: #6c6b6b; */
+}
+
+.razer_rogo{
+  display: flex;
+  justify-content: space-around;
+  /* フォント */
+  font-family: 'Anton', sans-serif;
+  background-color: black;
+}
+.text_rogo{
+  margin: 30px auto;
+  text-align: center;
+}
+
+nav{
+  display: flex;
+  justify-content: center;
+  text-align: center; 
+}
+ .nav_item{
+  margin: 20px;
+  padding: 0 70px;
+ }
+
+.main_visual_content{
+  width: 100%;
+  height: 390px;
+  background-image: url(./img/main_visual.png);
+  background-size: cover;
+  background-position: center;
+}
+.main_visual_text{
+  width: 40%;
+  height: 190px;
+  /* 半透明 */
+  background-color: rgba(44, 99, 29, 0.5);
+  text-align: center;
+  padding-top: 200px;
+  color: azure;
+  font-size: 25px;
+}
+
+.my_use_devises{
+  justify-content: center;
+  display: flex;
+}
+.use_devise_image{
+  width: 95%;
+}
+table,th,td{
+  /*border-collapse: collapse2重になっている線を重ねて1本に*/
+  border-collapse: collapse;
+  border: 5px solid green;
+  table-layout: auto;
+}
+table{
+  margin: auto;
+  text-align: center;
+  width: 95%;
+}
