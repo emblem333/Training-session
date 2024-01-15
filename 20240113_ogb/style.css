@@ -1,0 +1,46 @@
+main{
+  display:flex;
+  width:100%;
+  height:150px;
+  background-color:darkgray;
+}
+
+main div{
+  width:100px;
+  height:100px;
+  border-radius:100%;
+  margin:30px auto;
+}
+
+.box1{
+  background-color:blue;
+}
+
+.box2{
+  background-color:yellow;
+}
+
+.box3{
+  background-color:red;
+}
+/*横幅*/
+@media screen and (max-width: 768px){
+
+  /*背景*/
+  main{
+    background-color: black;
+  }
+}
+/*横幅500px*/
+@media screen and (max-width:500px) {
+  /*要素を消して信号機の写真に差し替えます*/
+  main{
+    background-color: white;
+    background-image: url(/20240113_ogb/img.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  main div{
+    display: none;
+  }
+}

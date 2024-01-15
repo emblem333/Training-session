@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <main>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+  </main>
+</body>
+
+<picture>
+    <!-- ブラウザ幅最大～1024px以上 -->
+    <source srcset="/20240113_ogb/pc.png" media="(min-width: 1024px)" type="image/png">
+    <!-- ブラウザ幅1024～600px -->
+    <source srcset="/20240113_ogb/tablet.jpg" media="(min-width: 600px)" type="image/jpg">
+    <!-- ブラウザ幅600px～以下 -->
+    <img src="/20240113_ogb/sp.jpg" alt="スマホ">
+</picture>
+
+</html>
