@@ -1,0 +1,13 @@
+@charset "UTF-8";
+ 
+#animation_01, #animation_02 {
+  width: 200px;
+  height: 200px;
+}
+
+#animation_01 {
+  background-color: red;
+}
+#animation_02 {
+  background-color: pink;
+}
