@@ -1,12 +1,22 @@
-// スクロールトリガーを設定
-gsap.to(".box", {
-    scrollTrigger: {
-        trigger: ".box", // アニメーションが発生するトリガー要素
-        start: "top center", // トリガー要素がビューポートの中央に来たときにアニメーションが始まる
-        end: "bottom center", // トリガー要素がビューポートの下端に達したときにアニメーションが終了
-        scrub: true, // スクロール時にアニメーションをスクラブする（アニメーションをスクロール速度に同期させる）
-    },
-    x: 500, // x軸方向の移動距離
-    rotation: 360, // 360度回転
-    duration: 2 // アニメーションの期間（秒）
-});
+gsap.to('.box',{x:400,
+    scrollTrigger:{
+      trigger:'.box',
+      start:'top 80%',
+      end:'bottom 20%',
+      markers:true,
+      toggleActions:'play none none reverse',
+      // 以下は確認用 箱の中の文字がスクロール位置によって変わります！
+      onEnter:()=>{
+        document.querySelector('.box').innerHTML = 'onEnter';
+      },
+      onLeave:()=>{
+        document.querySelector('.box').innerHTML = 'onLeave';
+      },
+      onEnterBack:()=>{
+        document.querySelector('.box').innerHTML = 'onEnterBack';
+      },
+      onLeaveBack:()=>{
+        document.querySelector('.box').innerHTML = 'onLeaveBack';
+      },
+    }
+  });
