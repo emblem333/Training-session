@@ -1,0 +1,78 @@
+body {
+  background-color: #3498db;
+  font-family: Arial, sans-serif;
+  place-items: center;
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+  height: 2500px; /* スクロールするためにページの高さを増やします */
+}
+/* .scroll_animetion_1 {
+  width: 100px;
+  height: 100px;
+  margin: 32px auto;
+  background-color: #7c06b2;
+  color: #06b234;
+  align-items: center;
+  position: relative;
+  left: -500px;
+  opacity: 0; 初期状態で不透明度を0に設定
+  transition: all 0.5s ease-in-out;
+} */
+/* .scroll_animetion_2 {
+  width: 100px;
+  height: 100px;
+  margin: 32px auto;
+  background-color: #1706b2;
+  color: #06b234;
+  align-items: center;
+  position: relative;
+  left: -500px;
+  opacity: 0; 初期状態で不透明度を0に設定
+  transition: all 0.5s ease-in-out;
+} */
+
+/* .scroll_animetion_1.active {
+  opacity: 1; 表示するときに不透明度を1に設定
+  left: 0;
+} */
+
+/* スクロールアニメーションの初期状態 */
+.scroll_animation_1,
+.scroll_animation_2
+{
+  width: 100px;
+  height: 100px;
+  margin: 32px auto;
+  background-color: #1706b2;
+  color: #06b234;
+  align-items: center;
+  position: relative;
+  left: -500px;
+  opacity: 0; /* 初期状態で不透明度を0に設定 */
+  transition: all 0.5s ease-in-out;
+}
+.scroll_animation_3 {
+  width: 100px;
+  height: 100px;
+  margin: 32px auto;
+  background-color: #1706b2;
+  color: #06b234;
+  align-items: center;
+  position: relative;
+  right: -500px;
+  opacity: 0; /* 初期状態で不透明度を0に設定 */
+  transition: all 0.5s ease-in-out;
+}
+
+/* スクロールされたときに表示されるアニメーション */
+.scroll_animation_1.active,
+.scroll_animation_2.active {
+  left: 0;
+  opacity: 1;
+  /* ここに他のアニメーションのスタイルを追加する */
+}
+.scroll_animation_3.active{
+  right: 0;
+  opacity: 1;
+}

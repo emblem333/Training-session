@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+}
+
+.sec, .sec7 {
+  height: 800px;
+}
+
+.sec2, 
+.sec3,
+.sec4,
+.sec5,
+.sec6 {
+  height: 350px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.sec2, .sec3, .sec6 {
+  justify-content: flex-start;
+}
+
+.sec3, .sec5 {
+  justify-content: flex-end;
+}
+
+img {
+  width: 450px;
+}
+
+.sec__img {
+  opacity: 0;
+  transform: translate(0px, 50px);
+  transition: all .6s ease-in-out;
+}
+
+/* アニメーション後のスタイル */
+.sec__img.fadeIn {
+  opacity: 1;
+  transform: translate(0px, 0px);
+}

@@ -3,25 +3,51 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>2024年2月10日課題</title>
+  <title>202402課題</title>
+  <link rel="stylesheet" href="./css/style_assignment.css">
 </head>
-<body>
-  <header>
-    <div id="title"></div>
-  </header>
-  <nav>
-    <ul>test_1</ul>
-    <ul>test_2</ul>
-    <ul>test_3</ul>
-  </nav>  
-  <main>
-    <div class="itembox_1"></div>
-    <div class="itembox_3"></div>
-    <div class="itembox"></div>
-  </main>
-  <footer>
 
-  </footer>
+<body>
+  <div class="scroll_animation_1" style="margin-top: 300px">
+    <span class="distance"></span>
+  </div>
+  <div class="scroll_animation_2" style="margin-top: 500px">
+    <span class="distance"></span>
+  </div>
+  <div class="scroll_animation_3" style="margin-top: 500px">
+    <span class="distance"></span>
+  </div>
 </body>
+<script src="./js/script_assignment.js"></script>
 </html>
+
+<!-- 
+<body>
+<div class="container">
+  <div class="box">1</div>
+  <div class="box">2</div>
+  <div class="box">3</div>
+  <div class="box">4</div>
+  <div class="box">5</div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const boxes = document.querySelectorAll('.box');
+
+    function checkPosition() {
+      boxes.forEach(box => {
+        const positionFromTop = box.getBoundingClientRect().top;
+
+        if (positionFromTop - window.innerHeight < 0) {
+          box.classList.add('show');
+        }
+      });
+    }
+
+    window.addEventListener('scroll', checkPosition);
+    window.addEventListener('resize', checkPosition);
+
+    checkPosition(); // 初期状態で表示される要素を設定
+  });
+</script> -->
