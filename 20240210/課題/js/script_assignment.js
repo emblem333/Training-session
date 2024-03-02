@@ -19,3 +19,12 @@ scrollAnimations.forEach((element, index) => {
     });
   });
 });
+
+gsap.to('#animation_01', {
+  x: 500,
+  delay: 1,
+  duration: 1,
+  ease: 'power4.out', //力強さを表現１～４
+  repeat: -1,
+  yoyo: true,
+})

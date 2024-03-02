@@ -24,8 +24,8 @@ body {
   transition: all 0.5s ease-in-out;
 }
 .scroll_animation_3 {
-  width: 100px;
-  height: 100px;
+  width: auto;
+  height: auto;
   margin: 32px auto;
   background-color: #1706b2;
   color: #06b234;
@@ -43,7 +43,24 @@ body {
   opacity: 1;
   /* ここに他のアニメーションのスタイルを追加する */
 }
+p,
 .scroll_animation_3.active{
   right: 0;
   opacity: 1;
+
+  animation-duration: 3s;
+  animation-name: slidein;
+  /* animation-iteration-count: infinite;   */
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
