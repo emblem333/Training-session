@@ -1,0 +1,26 @@
+body {
+  background-color: #3498db;
+  font-family: Arial, sans-serif;
+  place-items: center;
+  font-size: 24px;
+  margin: 0;
+  height: 1200px; /* スクロールするためにページの高さを増 */
+  padding: 50vh 20px;
+}
+.animation_1 {
+  background-color: rgb(122, 14, 223);
+  width: 100px;
+  height: 100px;
+}
+.animation_2 {
+  background-color: rgb(226, 43, 43);
+  width: 100px;
+  height: 100px;
+  margin-top: 400px;
+}
+.animation_3 {
+  background-color: rgb(226, 153, 43);
+  width: 100px;
+  height: 100px;
+  margin-top: 400px;
+}
