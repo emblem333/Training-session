@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>20240309講習会</title>
+</head>
+<body>
+  <!-- ラジオボタン  idとラベルタグは一緒に扱う-->
+  <div>
+    <input id="apple" type="radio" name="fruit" value="リンゴ"><label for="apple">リンゴ</label>
+    <input id="lemon" type="radio" name="fruit" value="レモン"><label for="apple">レモン</label>
+    <input id="melon" type="radio" name="fruit" value="メロン"><label for="apple">メロン</label>
+  </div>
+  <!--チェックボッス -->
+  <div>
+    <input id="apple" type="checkbox" name="fruit" value="リンゴ"><label for="apple">リンゴ</label>
+    <input id="lemon" type="checkbox" name="fruit" value="レモン"><label for="apple">レモン</label>
+    <input id="melon" type="radio" name="fruit" value="メロン"><label for="apple">メロン</label>
+  </div>
+  <!-- テキストエリア -->
+  <div>
+    <input type="text">
+    <textarea name="text_send" id="" cols="30" rows="10"></textarea>
+    <button type="button" name="button1" id="submit">送信</button>
+  <!-- cols = 横MAX -->
+  <!-- rows = 縦MAX -->
+  <!-- risize none で可変が消える -->
+  </div>
+</body>
+<script>
+  document.getElementById("submit").addEventListener('click',function())
+  const send_text = document.getElementById('send_text').value
+  console.log(send_text);
+</script>
+</html>
